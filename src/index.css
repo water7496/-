@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Zeyada&family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
+
+@theme {
+  --font-typewriter: "Special Elite", system-ui, serif;
+  --font-handdrawn: "Zeyada", cursive;
+  --font-rounded: "M PLUS Rounded 1c", sans-serif;
+}
+
+body {
+  background-color: #fdfbf7;
+  color: #4a4a4a;
+  overflow-x: hidden;
+}
+
+.hand-drawn-border {
+  border: 2px solid #4a4a4a;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+.animate-wiggle {
+  animation: wiggle 2s ease-in-out infinite;
+}
